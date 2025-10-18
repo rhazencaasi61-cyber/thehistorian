@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Historian</title>
   <link rel="stylesheet" href="style.css" />
+
   <style>
     body {
       font-family: Georgia, serif;
@@ -51,18 +52,64 @@
       font-size: 0.9em;
       color: #777;
     }
+
+    /* Hero section (top image banner) */
+    .hero {
+      background-image: url('THEWORLD.png'); /* your image file */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh; /* full height of the screen */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    /* Dark overlay for readability */
+    .hero .overlay {
+      background: rgba(0, 0, 0, 0.5); /* 50% dark layer */
+      padding: 4em 2em;
+      width: 100%;
+    }
+
+    /* Adjust the header text */
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero .tagline {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+
+    .hero nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1em;
+      font-weight: bold;
+    }
+
+    .hero nav a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>THE HISTORIAN</h1>
-    <p class="tagline">The World, From West to East.</p>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#articles">Articles</a>
-      <a href="#about">About</a>
-    </nav>
+  <header class="hero">
+    <div class="overlay">
+      <h1>THE HISTORIAN</h1>
+      <p class="tagline">The World, From West to East.</p>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#articles">Articles</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
   </header>
 
   <section id="home">
